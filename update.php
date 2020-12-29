@@ -29,11 +29,7 @@
 						echo '<tr><td>ID: </td><td> <input type="text" name="stdMatric" value="'.$row["stdMatric"].'" disabled></tr>';
 						echo '<tr><td>Name: </td><td><input type="text" name="stdMatric" value="'.$row["stdName"].'" disabled><tr>';
 						echo '<tr><td>Program Name: </td><td><input type="text" name="stdMatric" value="'.$row["programname"].'" disabled><tr>';
-						echo '<tr><td>IP: </td><td><input type="text" name="ip" value="'.$row["ip"].'"><tr>';
-						echo '<tr><td>Geolocation: </td><td><input type="text" name="geolocation" value="'.$row["geolocation"].'"><tr></table>';
-						echo '<input type="hidden" name="attendance_ID" value='.$row["attendance_ID"].'>';
-						echo '<br><input type="submit" value="Submit" name = "Submit" >';
-						
+						echo '<input type="hidden" name="attendance_ID" value='.$row["attendance_ID"].'>';		
 				}
 			}
 			else {
