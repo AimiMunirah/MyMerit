@@ -9,7 +9,7 @@ session_start ();
 		<?php include 'navbarlogout.html';?>
 		<div class="container">
 		  <div style="background:transparent !important; padding-top:5px !important" class="jumbotron jumbotron-fluid">
-			<h2 style="margin-bottom:-40px !important">STUDENT COMPLAINT</h2>
+			<h2 style="margin-bottom:-40px !important">STUDENT COMPLAINTS</h2>
 		 </div>
 		 <hr style="border: 2px solid #4682BF;">
 </head>
