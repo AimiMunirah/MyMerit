@@ -19,13 +19,13 @@
       <div class="form-group">
         <div class="input-group col-xs-15">
           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-          <input type="text" class="form-control" name="stdName" placeholder="Username"/>
+          <input type="text" class="form-control" name="stdName" placeholder="Username" autofocus required/>
         </div>
       </div>
       <div class="form-group">
         <div class="input-group col-xs-15">
           <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-          <input type="password" class="form-control" name="stdPwd" placeholder="Password"/>
+          <input type="password" class="form-control" name="stdPwd" placeholder="Password" autofocus required/>
         </div>
       </div>
       <div class="btn-group">
