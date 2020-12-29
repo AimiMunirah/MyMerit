@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>LOGIN | MyMerit UMP</title>
+		<title>LOGIN | MyMerit</title>
 		<?php include 'navbar.html';?>
 		<div class="container">
 		  <div style="background:transparent !important; padding-top:5px !important" class="jumbotron jumbotron-fluid">
