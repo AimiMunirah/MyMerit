@@ -81,14 +81,15 @@ th, td {
 			$progmerit = $row3['progmerit'];
 			$posmerit = $row4['posmerit']; 
 			$total = $progmerit+$posmerit;
-			echo "<tr>";
-			echo "<td>Cumulative Merit</td>";
+			echo "<form action='' method='post'><tr>";
+			echo "<td>Total</td><td></td><td><input type='text' name='1' size='10' value=".$progmerit." readonly></td>";
+			echo "<td></td><td><input type='text' name='2' size='10' value=".$posmerit." readonly></td></tr>";
+			echo "<tr><td>Cumulative Merit</td>";
 			echo "<form action='' method='post'>";
-			echo "<td><input type='text' name='3' value=".$total." disabled><input type='hidden' name='4' value=".$id."></td>";
-			echo "<td><input type='hidden' name='1' value=".$progmerit."></td>";
-			echo "<td><input type='hidden' name='2' value=".$posmerit."></td>";
-			echo "<td><input type='submit' name='claim' value='Claim'></td></form>";
-			echo "</tr>";
+			echo "<td><input type='text' name='3' value=".$total." readonly>
+			<input type='hidden' name='4' value=".$id."></td>";
+			echo "<td></td><td></td><td><input type='submit' name='claim' value='Claim'></td>";
+			echo "</tr></form>";
 			?>
 			<tr></tr>
 			<tr><td></td><td></td><td></td><td></td><td><button onclick="window.print()">PRINT</button></td></tr>
