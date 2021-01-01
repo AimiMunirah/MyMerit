@@ -27,7 +27,8 @@ include "connection.php";
         <th>Program Details</th>
         <th>Program Location</th>
 		<th>Program Date</th>
-		<th>Program Time</th>
+		<th>Program Start Time</th>
+		<th>Program Duration</th>
 		<th>Program Merit</th>
 		<th>Approve Program</th>
 		<th>Reject Program</th>
@@ -51,6 +52,7 @@ include "connection.php";
 		echo "<td>" ; echo $row["programlocation"]; echo "</td>";
 		echo "<td>" ; echo $row["programdate"]; echo "</td>";
 		echo "<td>" ; echo $row["programtime"]; echo "</td>";
+		echo "<td>" ; echo $row["programduration"]; echo "</td>";
 		echo "<td>" ; echo $row["merit"]; echo "</td>";
 		echo "<td>" ; ?><a href="approvalprocess.php?id=<?php echo $row2["id"]; ?>&status=approved"><button type="button" name="approve" class="btn btn-success">APPROVE</button></a> <?php echo "</td>";
 		echo "<td>" ; ?><a href="approvalprocess.php?id=<?php echo $row2["id"]; ?>&status=reject"><button type="button" name="reject" class="btn btn-danger">REJECT</button></a> <?php echo "</td>";
@@ -76,7 +78,8 @@ include "connection.php";
         <th>Program Details</th>
         <th>Program Location</th>
 		<th>Program Date</th>
-		<th>Program Time</th>
+		<th>Program Start Time</th>
+		<th>Program Duration</th>
 		<th>Program Merit</th>
       </tr>
     </thead>
@@ -96,6 +99,7 @@ include "connection.php";
 		echo "<td>" ; echo $row["programlocation"]; echo "</td>";
 		echo "<td>" ; echo $row["programdate"]; echo "</td>";
 		echo "<td>" ; echo $row["programtime"]; echo "</td>";
+		echo "<td>" ; echo $row["programduration"]; echo "</td>";
 		echo "<td>" ; echo $row["merit"]; echo "</td>";
 		echo "</tr>";
 
