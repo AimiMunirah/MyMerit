@@ -35,15 +35,19 @@ $coordinatorID=$_SESSION['coID'];
       <label for="pwd">Program Date:</label>
       <input type="date" class="form-control" id="programdate" placeholder="Enter date" name="programdate" required>
     </div>
-	<div class="form-group">
-      <label for="pwd">Program Time:</label>
+	 <div class="form-group">
+      <label for="pwd">Program Start Time:</label>
       <input type="time" class="form-control" id="programtime" placeholder="Enter time" name="programtime" required>
     </div>
     <div class="form-group">
+      <label for="pwd">Program Duration:</label>
+      <input type="text" class="form-control" id="programduration" placeholder="Enter duration (hours/days)" name="programduration" required>
+    </div>
+       <div class="form-group">
       <label for="pwd">Merit Awarded:</label>
       <input type="text" class="form-control" id="merit" placeholder="Enter merit awarded" name="merit" required>
     </div>
-	<div class="form-group">
+  <div class="form-group">
       <label for="pwd">Program Image/Poster:</label>
       <input type="file" class="form-control"  name="f1" required>
     </div>
@@ -63,7 +67,7 @@ if(isset($_POST["insert"]))
 	$dst1="images/".$tm.$fnm;
 	move_uploaded_file($_FILES["f1"]["tmp_name"],$dst);
 
-	mysqli_query($link,"insert into programtable values (NULL,'$_POST[programname]','$_POST[programdetails]','$_POST[programlocation]','$_POST[programdate]','$_POST[programtime]','$_POST[merit]','$dst1','$_POST[programstatus]','$coordinatorID')");
+	mysqli_query($link,"insert into programtable values (NULL,'$_POST[programname]','$_POST[programdetails]','$_POST[programlocation]','$_POST[programdate]','$_POST[programtime]','$_POST[programduration]','$_POST[merit]','$dst1','$_POST[programstatus]','$coordinatorID')");
 	
 	?>
 	<script type = "text/javascript">
