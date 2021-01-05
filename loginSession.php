@@ -8,7 +8,7 @@ if (isset($_POST['stdData'])) {
   $stdPwd = $_POST['stdPwd'];
 
   
-    $sql = "SELECT * from student";
+    $sql = "SELECT * from student where stdName ='$stdName' and stdPwd = '$stdPwd'";
     
 $query = $mysqli->query($sql);
 
