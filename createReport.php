@@ -9,7 +9,7 @@ session_start ();
 		<?php include 'navbarlogout.html';?>
 		<div class="container">
 		  <div style="background:transparent !important; padding-top:5px !important" class="jumbotron jumbotron-fluid">
-			<h2 style="margin-bottom:-40px !important">STUDENT COMPLAINTS</h2>
+			<h2 style="margin-bottom:-40px !important">CREATE REPORT</h2>
 		 </div>
 		 <hr style="border: 2px solid #4682BF;">
 </head>
@@ -19,19 +19,18 @@ session_start ();
 <div class="col-lg-4">
   <form action="" name="form1" method="post" enctype="multipart/form-data" align="center">
     <div class="form-group">
-      <label for="email">Name of Program:</label>
+      <label for="email">Report Title:</label>
       <input type="text" class="form-control" id="reportTitle" placeholder="Enter report title" name="reportTitle" required>
     </div>
     <div class="form-group">
-      <label for="pwd">Complaint:</label>
-      <textarea type="text" rows="10" cols="50" class="form-control" id="reportDest" placeholder="Enter report description" name="reportDesc" required>
+      <label for="pwd">Report Details:</label>
+      <input type="text" class="form-control" id="reportDest" placeholder="Enter report description" name="reportDesc" required>
       </textarea>
     </div>
 	  <div class="form-group">
       <label for="pwd">Report Date:</label>
       <input type="date" class="form-control" id="reportDate" placeholder="Enter date" name="reportDate" required>
     </div>
-    <button type="submit" class="btn btn-primary" onclick="window.location.href='stdMenu.php';">Back</button>
     <button type="submit" name="crRP" class="btn btn-default">Add Report</button>
 
   </form>
