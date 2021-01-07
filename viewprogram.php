@@ -26,7 +26,8 @@ $coID=$_SESSION['coID'];
         <th>Program Details</th>
         <th>Program Location</th>
 		<th>Program Date</th>
-		<th>Program Time</th>
+		<th>Program Start Time</th>
+		<th>Program Duration</th>
 		<th>Program Merit</th>
 		<th>Edit</th>
 		<th>Delete</th>
@@ -50,6 +51,7 @@ $coID=$_SESSION['coID'];
 		echo "<td>" ; echo $row["programlocation"]; echo "</td>";
 		echo "<td>" ; echo $row["programdate"]; echo "</td>";
 		echo "<td>" ; echo $row["programtime"]; echo "</td>";
+		echo "<td>" ; echo $row["programduration"]; echo "</td>";
 		echo "<td>" ; echo $row["merit"]; echo "</td>";
 		if ( $row["programstatus"]!="APPROVED" ) {
 		echo "<td>" ; ?><a href="edit.php? id=<?php echo $row["id"]; ?>"><button type="button" class="btn btn-success">Edit</button></a> <?php echo "</td>";
