@@ -25,7 +25,6 @@ session_start ();
     <div class="form-group">
       <label for="pwd">Report Details:</label>
       <input type="text" class="form-control" id="reportDest" placeholder="Enter report description" name="reportDesc" required>
-      </textarea>
     </div>
 	  <div class="form-group">
       <label for="pwd">Report Date:</label>
