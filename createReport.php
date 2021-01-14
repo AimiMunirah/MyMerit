@@ -33,7 +33,7 @@ session_start ();
       <input type="date" class="form-control" id="reportDate" placeholder="Enter date" name="reportDate" required>
     </div>
     <button type="submit" class="btn btn-primary" onclick="window.location.href='stdMenu.php';">Back</button>
-    <button type="submit" name="crRP" class="btn btn-default">Add Report</button>
+    <button type="submit" name="crRP" class="btn btn-default">Submit Complain</button>
 
   </form>
 </div>
